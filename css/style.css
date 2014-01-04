@@ -1,0 +1,15 @@
+div {
+  margin-bottom : 10px;
+}
+
+div.no-space {
+  margin-bottom : 0px;
+}
+
+div.space-above {
+  margin-top : 10px;
+}
+
+li, ul {
+  margin-bottom : 5px;
+}
