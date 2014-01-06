@@ -2,6 +2,10 @@ div {
   margin-bottom : 10px;
 }
 
+div.img {
+  text-align : center;
+}
+
 div.no-space {
   margin-bottom : 0px;
 }
