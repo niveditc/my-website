@@ -1,3 +1,12 @@
+body{
+  color : #003366;
+  background-color : #FFCC99;
+}
+
+.header{
+  background-color : #FF9966;
+}
+
 div {
   margin-bottom : 10px;
 }
@@ -16,4 +25,12 @@ div.space-above {
 
 li, ul {
   margin-bottom : 5px;
+}
+
+a, a.btn{
+  color : #005099;
+}
+
+.cur{
+  font-weight : bold;
 }
