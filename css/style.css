@@ -27,10 +27,15 @@ li, ul {
   margin-bottom : 5px;
 }
 
-a, a.btn{
+a, a.btn {
   color : #005099;
 }
 
-.cur{
+.cur {
   font-weight : bold;
+}
+
+.name {
+  font-weight : bold;
+  color : #000000;
 }
