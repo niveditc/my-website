@@ -9,11 +9,16 @@ body{
 }
 
 .header{
-  background-color : #FFCC99;
+  background-color : #FFCCFF;
+}
+
+.center{
+  text-align : center;
+  align: 0px auto;
 }
 
 div {
-  margin-bottom : 10px;
+  padding-bottom : 10px;
 }
 
 div.img {
@@ -25,7 +30,7 @@ div.no-space {
 }
 
 div.space-above {
-  margin-top : 10px;
+  padding-top : 10px;
 }
 
 li, ul {
