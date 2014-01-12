@@ -37,7 +37,11 @@ li, ul {
   margin-bottom : 5px;
 }
 
-a, a.btn {
+a{
+  color : #6699FF;
+}
+
+a.btn {
   color : #005099;
 }
 
