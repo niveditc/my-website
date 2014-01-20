@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700'
+          rel='stylesheet' type='text/css'>
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row space-above header center">
+        <div class="h1 no-space">
+          Nivedita Chopra
+        </div>
+      </div>
+
+      <div class="row no-space center">
+          <a href="../index.html" class="btn btn-link btn-lg">About</a>
+          <a href="projects.html" class="btn btn-link btn-lg">Projects</a>
+          <a href="activities.html" class="btn btn-link btn-lg">Activities</a>
+          <a href="classes.html" class="btn btn-link btn-lg">Classes</a>
+          <a href="../resume/resume.pdf" class="btn btn-link btn-lg">Resume</a>
+          <a href="contact.html" class="btn btn-link btn-lg">Contact</a>
+          <a href="15-122.html" class="btn btn-link btn-lg">15-122</a>
+          <a href="misc.html" class="btn btn-link btn-lg">Miscellaneous</a>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1 no-space">
+          <h2>Emacs : The Basics</h2>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1 no-space">
+          <div>
+            This tutorial has been written as a reference for a session on emacs that
+            I am conducting on 20th January, 2014, as part of my job as a teaching assistant
+            for <a href="15-122.html">15-122</a>
+          </div>
+          <div>
+            Here I intend to highlight the basic commands for various essential tasks as well
+            as a few select commands that I have found extremely useful, as a programmer who
+            writes code exclusively in emacs.
+          </div>
+          <div>
+            Any commands mentioned are to be run in a shell on a Mac or Linux environment.
+            In commands, 'C' refers to the Ctrl key and 'M' refers to the Alt or Option key.
+            The command 'C-x' means first press the Ctrl key, then press 'x' while
+            keeping the Ctrl key pressed.
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1 no-space">
+          <h3>Opening and closing files</h3>
+          <div>
+            To open a file <code>foo.c0</code> in emacs, simply type the following command in the shell
+            <code>
+              emacs foo.c0
+            </code>
+          </div>
+          <div>
+            To close a file in emacs, use the command <code>C-x C-c</code>. If you have made any changes to the
+            file you will be prompted to choose one of many options. The only ones that usually concern you, will
+            be 'y' for yes (to save your changes) and 'n' for no (to discard your changes).
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Saving files</h3>
+          <div>
+            To save the file, use <code>C-x C-s</code>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Navigating</h3>
+          <div class="col-md-3">
+            <b>By Word</b><br>
+            Forward &#8212; <code>M-f</code><br>
+            Backward &#8212; <code>M-b</code><br>
+          </div>
+          <div class="col-md-3">
+            <b>By Line</b><br>
+            Next Line &#8212; <code>C-n</code><br>
+            Previous Line &#8212; <code>C-p</code><br>
+            Go to beginning &#8212; <code>C-a</code><br>
+            Go to end &#8212; <code>C-e</code><br>
+            Go to line num &#8212; <code>M-g g num</code>
+          </div>
+          <div class="col-md-3">
+            <b>By Screen</b><br>
+            Next Screen &#8212; <code>C-v</code><br>
+            Previous Screen &#8212; <code>M-v</code><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Find and Replace</h3>
+          <div>
+            To find text, use <code>C-s</code> and type in the string you
+            want to search for This highlights all the occurences of the
+            string in the document, starting forward from the current cursor.
+            To move forwards through the matches, use <code>C-s</code> and to move
+            backwards, use <code>C-r</code>.
+          </div>
+          <div>
+            To replace one string with another, use <code>M-%</code>. When prompted,
+            enter the string to replace and then the string that replaces it. This will
+            replace all occurences ahead of the current cursor
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Cut, Copy & Paste</h3>
+          <div>
+            Cut &#8212; <code>C-w</code><br>
+            Copy &#8212; <code>M-w</code><br>
+            Paste &#8212; <code>C-y</code><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Undo</h3>
+          <div>
+            To undo the previous action, use <code>C-_</code>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+
