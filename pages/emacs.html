@@ -38,18 +38,17 @@
         <div class="col-md-10 col-md-offset-1 no-space">
           <div>
             This tutorial has been written as a reference for a session on emacs that
-            I am conducting on 20th January, 2014, as part of my job as a teaching assistant
+            I am conducting on 20th January, 2014, as part of my duties as a teaching assistant
             for <a href="15-122.html">15-122</a>
           </div>
           <div>
-            Here I intend to highlight the basic commands for various essential tasks as well
-            as a few select commands that I have found extremely useful, as a programmer who
-            writes code exclusively in emacs.
+            Here, I intend to highlight the basic commands for various essential tasks.
+            I'll also mention some commands that I have found extremely useful
+            as a programmer who writes code exclusively in emacs.
           </div>
           <div>
-            Any commands mentioned are to be run in a shell on a Mac or Linux environment.
-            In commands, 'C' refers to the Ctrl key and 'M' refers to the Alt or Option key.
-            The command 'C-x' means first press the Ctrl key, then press 'x' while
+            In these commands, 'C' refers to the Ctrl key and 'M' refers to the Alt or Option key.
+            The command 'C-x' means first press the Ctrl key and then press 'x', while
             keeping the Ctrl key pressed.
           </div>
         </div>
@@ -57,16 +56,14 @@
 
       <div class="row no-space">
         <div class="col-md-10 col-md-offset-1 no-space">
-          <h3>Opening and closing files</h3>
+          <h3>Opening and Closing Files</h3>
           <div>
-            To open a file <code>foo.c0</code> in emacs, simply type the following command in the shell
-            <code>
-              emacs foo.c0
-            </code>
+            To open a file <code>foo.c0</code> in emacs, simply type
+            <code>emacs foo.c0</code> in the shell.
           </div>
           <div>
             To close a file in emacs, use the command <code>C-x C-c</code>. If you have made any changes to the
-            file you will be prompted to choose one of many options. The only ones that usually concern you, will
+            file, you will be prompted to choose one of many options. The only ones that usually concern you, will
             be 'y' for yes (to save your changes) and 'n' for no (to discard your changes).
           </div>
         </div>
@@ -74,9 +71,9 @@
 
       <div class="row no-space">
         <div class="col-md-10 col-md-offset-1">
-          <h3>Saving files</h3>
+          <h3>Saving Files</h3>
           <div>
-            To save the file, use <code>C-x C-s</code>
+            To save the file, use <code>C-x C-s</code>.
           </div>
         </div>
       </div>
@@ -110,26 +107,34 @@
           <h3>Find and Replace</h3>
           <div>
             To find text, use <code>C-s</code> and type in the string you
-            want to search for This highlights all the occurences of the
-            string in the document, starting forward from the current cursor.
-            To move forwards through the matches, use <code>C-s</code> and to move
-            backwards, use <code>C-r</code>.
+            want to search for. This highlights all the occurences of the
+            string in the document. To move forwards through the
+            matches, use <code>C-s</code> and to move backwards,
+            use <code>C-r</code>.
           </div>
           <div>
             To replace one string with another, use <code>M-%</code>. When prompted,
-            enter the string to replace and then the string that replaces it. This will
-            replace all occurences ahead of the current cursor
+            type the string to replace and hit enter. Then type the string that replaces
+            it and hit enter. This will replace all occurences ahead of the current cursor
           </div>
         </div>
       </div>
 
-      <div class="row no-space">
+      <div class="row no-space" id="copy">
         <div class="col-md-10 col-md-offset-1">
           <h3>Cut, Copy & Paste</h3>
           <div>
+            First, to select the text, for cut or copy, move the cursor to the beginning of
+            the text you want to select. Press <code>C-space</code> and move your cursor
+            to the end of the text. Then use the appropriate command below.
+          </div>
+          <div>
             Cut &#8212; <code>C-w</code><br>
             Copy &#8212; <code>M-w</code><br>
-            Paste &#8212; <code>C-y</code><br>
+          </div>
+          <div>
+            To paste text that has been cut or copied, move your cursor to the spot where you
+            want to insert the text and then use <code>C-y</code> to paste.
           </div>
         </div>
       </div>
@@ -140,6 +145,44 @@
           <div>
             To undo the previous action, use <code>C-_</code>
           </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Cancelling a Command</h3>
+          <div>
+            Many times, you may accidentally enter in part of a command and then realize
+            that you didn't actually want to do that. To cancel or 'quit' the command, type
+            <code>C-g</code>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Getting the Length of a Line</h3>
+          <div>
+            To get the number of characters in some text, select the text (as shown in the
+            <a href="emacs.html#copy">Cut, Copy and Paste</a> section), and then use the command <code>M-=</code> to count
+            the lines and characters in the region.
+          </div>
+          <div>
+            I find this particularly useful in getting the length of a line. To do this, from anywhere
+            in the line type <code>C-a C-space C-e M-=</code> to get the number of characters in the line.
+            This works by going to the beginning of the line, selecting the region till the end of the line
+            and then running the command to count the number of characters in that line. I do this when
+            I feel a line is growing too long, as it is good style to keep the line length limited to
+            80 characters.
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-space">
+        <div class="col-md-10 col-md-offset-1">
+          Hopefully, you were able to follow this and are feeling a bit more confident about emacs commands.
+          Please feel free to email me if you have any comments or questions about what I have written here.
+          I plan to expand on some of the more complicated commands in emacs sometime soon.
         </div>
       </div>
 
