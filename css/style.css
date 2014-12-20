@@ -58,6 +58,16 @@ a.btn {
   color : green;
 }
 
+.cs-link {
+  color : green;
+  text-decoration : underline;
+}
+
 .econ{
   color : steelblue;
+}
+
+.econ-link {
+  color : steelblue;
+  text-decoration : underline;
 }
