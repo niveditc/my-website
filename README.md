@@ -1,4 +1,4 @@
-my-website
+Website
 ==========
 
-My personal website, which you can see live [here](http://www.andrew.cmu.edu/user/niveditc/) 
+My personal website, hosted at niveditc.github.io via GitHub Pages.
